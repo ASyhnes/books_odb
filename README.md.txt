@@ -79,3 +79,5 @@ end
 
 puts summation(2)  # Affiche 3 (1 + 2)
 puts summation(8)  # Affiche 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+
+...
