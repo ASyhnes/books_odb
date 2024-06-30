@@ -76,7 +76,7 @@ capitalized_word = word.upcase
 puts capitalized_word
 ```
 
-###Diviser une chaîne de caractères en deux parties
+### Diviser une chaîne de caractères en deux parties
 
 ```
 full_name = "david chardon"
