@@ -85,6 +85,14 @@ puts "First name: #{first_name}"
 puts "Last name: #{last_name}"
 ```
 
+### Enlever la premiére et derniere lettre d'un mot
+
+```
+def remove_first_and_last_char(word)
+  word[1..-2]
+end
+```
+
 ### Obtenir les initiales d'un nom
 
 ```
