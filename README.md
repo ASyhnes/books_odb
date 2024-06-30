@@ -38,9 +38,15 @@ array = [1, 2, 3, 4, 5]
 somme = array.sum
 puts "La somme des nombres du tableau est : #{somme}"
 
+deuxiéme méthode, plus rapide: Calculer la somme des nombres de 1 à num
+
+def summation(num)
+  (1..num).sum
+end
+
 ## Méthodes
 
-###Vérifier si un nombre est un carré parfait
+### Vérifier si un nombre est un carré parfait
 
 def is_square?(number)
   return false if number < 0
@@ -48,7 +54,7 @@ def is_square?(number)
   sqrt == sqrt.to_i
 end
 
-###Convertir une chaîne en majuscules
+### Convertir une chaîne en majuscules
 
 word = "bonjour"
 capitalized_word = word.upcase
@@ -61,7 +67,7 @@ first_name, last_name = full_name.split
 puts "First name: #{first_name}"
 puts "Last name: #{last_name}"
 
-###Obtenir les initiales d'un nom
+### Obtenir les initiales d'un nom
 
 def abbrev_name(name)
   first_name, last_name = name.split
@@ -71,7 +77,7 @@ end
 puts abbrev_name("david chardon") # Affiche "D.C"
 puts abbrev_name("sophie hernandez") # Affiche "S.H"
 
-###Calculer la somme des nombres de 1 à un nombre donné
+### Calculer la somme des nombres de 1 à un nombre donné
 
 def summation(num)
   (1..num).sum
@@ -79,3 +85,38 @@ end
 
 puts summation(2)  # Affiche 3 (1 + 2)
 puts summation(8)  # Affiche 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+
+### Verifier si une lettre est en majuscule dans un string (3 méthode:)
+
+1:
+def contains_uppercase_each_char?(str)
+  str.each_char do |char|
+    return true if char == char.upcase && char =~ /[A-Z]/
+  end
+  false
+end
+
+2:
+def contains_uppercase_match?(str)
+  !!(str =~ /[A-Z]/)
+end
+
+3:
+def contains_uppercase_scan?(str)
+  str.scan(/[A-Z]/).any?
+end
+
+### "camelCasing"  =>  "camel Casing"
+
+def solution(string)
+result = ""
+
+  string.each_char do |char|
+    if char =~ /[A-Z]/
+      result += " "
+    end
+    result += char
+  end
+
+  result
+end
