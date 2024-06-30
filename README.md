@@ -8,7 +8,7 @@ Ce document est un mémo rapide pour les principales fonctionnalités de Ruby.
 ### Boucle `times`
 
 3.times do |i| <br>
-  puts "Iteration #{i}" <br>
+&nbsp;&nbsp;puts "Iteration #{i}" <br>
 end
 
 ### Boucle `for`
