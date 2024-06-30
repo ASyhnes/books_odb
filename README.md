@@ -6,10 +6,10 @@ Ce document est un mémo rapide pour les principales fonctionnalités de Ruby.
 ## Boucles
 
 ### Boucle `times`
-
+```
 3.times do |i| <br>
 &nbsp;&nbsp;puts "Iteration #{i}" <br>
-end
+end```
 
 ### Boucle `for`
 
