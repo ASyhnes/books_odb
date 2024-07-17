@@ -1,0 +1,7 @@
+id,meal_id,customer_id,employee_id,delivered
+1,576,3,2,false
+2,577,3,3,false
+3,578,1,2,false
+4,32,1,3,true
+5,577,1,3,false
+6,578,2,2,false
